@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <!-- Reuse this block for the left and right wheels. -->
+  
   <xacro:macro name="wheel" params="side y">
     <link name="wheel_${side}">
       <visual>
-        <!-- Rotate the cylinder so its axle is parallel to Y. -->
+        
         <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
         <geometry><cylinder radius="0.05" length="0.025"/></geometry>
         <material name="black"/>
